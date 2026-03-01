@@ -33,9 +33,72 @@
 
     <div class="container">
         <div class="hero">
-            <h1>SwiftRide</h1>
+            <h1>Need some help?</h1>
             <p>Fast, safe, and reliable transport at your fingertips</p>
         </div>
 
+
+<button class="collapsible">How do you use the fare matrix?</button>
+<div class="content">
+  <p><b>NOTE:</b> This fare matrix is only for MRT 3.</p> <br>
+    1. Choose your pick up location. (Ex. North Ave.) <br>
+    2. Determine your destination. (Ex. Taft Ave.)<br>
+    3. Check the discount box if you are a student/senior/PWD. <br>
+    4. Press calcalute. <br>
+    5. Your total fare will appear about the calculate button. <br>
+  </p>
+</div>
+<button class="collapsible">How does the fare matrix calculate my fare?</button>
+<div class="content">
+ <p> <b>NOTE:</b> This fare matrix only computes for North Avenue to Taft Avenue and NOT vice versa. Nevertheless, fares for Taft Avenue to North Avenue will be similar from North Avenue to Taft Avenue.</p> <br>
+  <p>The fare matrix calculates the fare by following a list of the stations and their distances. Once the pick up & destination has been chosen, the system will add it up to get the total distance. The system, following PEMDAS will then get the total fare by adding the base fare, which is 50 pesos, by total distance minus base kilometer, which is 2 KM, times per KM rate, which is 15 pesos. </p>
+</div>
+<button class="collapsible">Something went wrong</button>
+<div class="content">
+  <p>What does "Something went wrong." mean? <br>
+If you are seeing this error that means you have selected nothing for the pickup and/or destination.</p> <br>
+If your total appears as <b>₱0.00</b>, that means you have selected same locations for pick up and destination or you have reversed the order. Location of destination must not go above the pick-up location otherwise the total will be 0 and vice versa.
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<br>
+        <p>Do you other questions?</p>
+    <form>
+    <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="Enter your email">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="5" placeholder="Write your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+    
+    <script src="proj.js"></script>
+
+        <footer class="footer"><b>Created by:</b> Suson & Reyes | <b>Grade & Section:</b> 9-Topaz <br> <b>Source:</b> Metro Line App</footer>
 </body>
 </html>
