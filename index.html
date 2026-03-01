@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+        <div class="logo">SwiftRide</div>
+    <a class="navbar-brand" href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Farematrix.html">Fare Matrix</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                <li class="nav-item"><a class="nav-link" href="help.html">Help</a></li>
+                    </ul>
+                    <a href="registration.html" class="btn-nav">Create Account</a> 
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to SwiftRide</h1>
+            <p>Fast, safe, and reliable transport at your fingertips</p>
+        </div>
+            <div style="text-align: center; margin-top: 16px;"> <button type="button" class="button button1" onmouseover="myFunction()">Hover instructions  >></button> </div> <div id="output" style="text-align:center; margin-top: 12px;">
+            </div>
+    </div>
+
+
+<script>
+function myFunction() {
+  document.getElementById("output").innerHTML = "1. Click on the 'Fare Matrix' tab to view the fare details for North Ave - Taft Ave.<br>2. Click on the 'Schedule' tab to check the train schedules.<br>3. If you need assistance, click on the 'Help' tab for FAQs and contact information. <br>Enjoy your ride with SwiftRide!";
+}
+</script>
+
+    <script src="proj.js"></script>
+    
+    <footer class="footer"><b>Created by:</b> Suson & Reyes | <b>Grade & Section:</b> 9-Topaz <br> <b>Source:</b> Metro Line App</footer>
+    
+</body>
+</html>
