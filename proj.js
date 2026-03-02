@@ -37,6 +37,7 @@ let pickup = document.getElementById("mySelect").value.trim();
 let destination = document.getElementById("mySelect2").value.trim();
 let isDiscounted = document.getElementById("discount").checked;
 
+// To check if the startIndex, endIndex, pick up and destinatio is being followed
     console.log("Pickup:", pickup, "Destination:", destination);
     console.log("Start index:", stationRoutes.indexOf(pickup));
     console.log("End index:", stationRoutes.indexOf(destination));
@@ -82,4 +83,5 @@ let totalFare;
 
 function goToConfirmation() {
     window.location.href = "confirmation.html";
+
 }
